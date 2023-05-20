@@ -16,9 +16,9 @@ if hrs <= 40:
     pay = hrs * rt  # Calculate pay for regular hours (up to 40)
 else:
     xhrs = hrs - 40  # Calculate the number of overtime hours
-    npay = 40 * rt  
+    regular_pay = 40 * rt  
     overtime_pay = xhrs * (rt * 1.5)  
-    pay = npay + overtime_pay  # Calculate total pay (regular + overtime)
+    pay = regular_pay + overtime_pay  # Calculate total pay (regular + overtime)
 
-print("Your pay:", pay)  
+print("Your pay:", round(pay, 2))  
 
